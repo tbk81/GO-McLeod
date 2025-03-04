@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-// var bondy = [][]string{
-// 	{"James", "Bond", "Shaken, not stirred"},
-// 	{"Miss", "Moneypenny", "I'm 008."},
-// }
+var bondy = [][]string{
+	{"James", "Bond", "Shaken, not stirred"},
+	{"Miss", "Moneypenny", "I'm 008."},
+}
 
-var jb = []string{"James", "Bond", "Shaken, not stirred"}
-var mp = []string{"Miss", "Moneypenny", "I'm 008."}
-var bondy = [][]string{jb, mp}
+// var jb = []string{"James", "Bond", "Shaken, not stirred"}
+// var mp = []string{"Miss", "Moneypenny", "I'm 008."}
+// var bondy = [][]string{jb, mp}
 
 func main() {
 	for i, v := range bondy {
