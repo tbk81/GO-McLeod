@@ -19,22 +19,20 @@ type stats struct {
 	cha   int
 }
 
-func (c character) indentify() {
-	fmt.Printf("My name - %v\nBackground in - %v\nMy species - %v\n My class - %v\n", c.name, c.background, c.species, c.class)
+func (c character) identify() {
+	fmt.Printf("My name - %v\nBackground in - %v\nMy species - %v\nMy class - %v\n", c.name, c.background, c.species, c.class)
 }
 
-func (s stats) statout() {
+func (s stats) identify() {
 	fmt.Printf("Str: %v\nDex: %v\nCon: %v\nInt: %v\nWis: %v\nCha: %v\n", s.str, s.dex, s.con, s.intel, s.wis, s.cha)
 }
 
 type player interface {
 	identify()
-	statout()
 }
 
 func whoami(p player) {
 	p.identify()
-	p.statout()
 }
 
 func main() {
@@ -69,4 +67,8 @@ func main() {
 	}
 
 	whoami(p1)
+	whoami(p1.stats)
+	fmt.Println("----------------------")
+	whoami(p2)
+	whoami(p2.stats)
 }
