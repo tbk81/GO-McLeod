@@ -1,10 +1,19 @@
 package main
 
+import "fmt"
+
 func main() {
-	return
+	numbers := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(foo(numbers...))
 }
 
-func foo()
+func foo(nums ...int) int {
+	sum := 0
+	for xi := range nums {
+		sum += xi
+	}
+	return sum
+}
 
 /*
 ● create a func with the identifier foo that
