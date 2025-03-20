@@ -37,10 +37,6 @@ func whoami(p player) {
 
 func main() {
 	p1 := character{
-		name:       "Trevor",
-		background: "Criminal",
-		species:    "Human",
-		class:      "Rogue",
 		stats: stats{
 			str:   10,
 			dex:   15,
@@ -49,13 +45,13 @@ func main() {
 			wis:   8,
 			cha:   11,
 		},
+		name:       "Trevor",
+		background: "Criminal",
+		species:    "Human",
+		class:      "Rogue",
 	}
 
 	p2 := character{
-		name:       "Zora",
-		background: "Cloistered Scholar",
-		species:    "Dog",
-		class:      "Paladin",
 		stats: stats{
 			str:   15,
 			dex:   12,
@@ -64,6 +60,10 @@ func main() {
 			wis:   8,
 			cha:   10,
 		},
+		name:       "Zora",
+		background: "Cloistered Scholar",
+		species:    "Dog",
+		class:      "Paladin",
 	}
 
 	whoami(p1)
