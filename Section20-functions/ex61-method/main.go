@@ -1,3 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+	p1 := person{
+		first: "trevor",
+		age:   44,
+	}
+
+	p1.speak()
+}
+
+type person struct {
+	first string
+	age   int
+}
+
+func (p person) speak() {
+	fmt.Printf("My name is %v and I am %v years old.\n", p.first, p.age)
+}
+
 /*
 ● Create a user defined struct with
 	○ the identifier “person”

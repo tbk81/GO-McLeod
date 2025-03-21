@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	numbers := []int{1, 2, 3, 4, 5, 6}
 	fmt.Println(foo(numbers...))
+	fmt.Println(bar(numbers))
 }
 
 func foo(nums ...int) int {
@@ -13,6 +14,14 @@ func foo(nums ...int) int {
 		sum += xi
 	}
 	return sum
+}
+
+func bar(slicenums []int) int {
+	sumnum := 0
+	for xint := range slicenums {
+		sumnum += xint
+	}
+	return sumnum
 }
 
 /*
