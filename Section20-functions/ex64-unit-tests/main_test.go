@@ -15,3 +15,17 @@ func TestSubtract(t *testing.T) {
 		t.Errorf("Subtract func was incorrect, got %d, want %d", total, 5)
 	}
 }
+
+func TestDoMath(t *testing.T) {
+	total := doMath(5, 5, add)
+	if total != 10 {
+		t.Errorf("Do math func was incorrect, got %d, want %d", total, 10)
+	}
+
+}
+func TestDoMathAgain(t *testing.T) {
+	total := doMath(10, 5, subtract)
+	if total != 5 {
+		t.Errorf("Do math func was incorrect, got %d, want %d", total, 5)
+	}
+}
