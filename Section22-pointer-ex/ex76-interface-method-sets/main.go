@@ -7,7 +7,7 @@ type dog struct {
 }
 
 func (d dog) walk() {
-	fmt.Println("My name is", d.first, "and I'm walk.")
+	fmt.Println("My name is", d.first, "and I'm walking.")
 }
 
 func (d dog) run() {
